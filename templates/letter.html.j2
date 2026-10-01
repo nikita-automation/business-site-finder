@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><title>Brief {{ name }}</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 10.5pt; color: #1d1d1f; line-height: 1.45; }
+  .page { position: relative; width: 210mm; height: 297mm; padding: 20mm 20mm 15mm 25mm; }
+  .sender-line { position: absolute; top: 45mm; left: 25mm; width: 85mm; font-size: 7pt; color: #6e6e73; border-bottom: .2mm solid #bbb; padding-bottom: 1mm; }
+  .recipient { position: absolute; top: 50mm; left: 25mm; width: 85mm; height: 40mm; font-size: 11pt; padding-top: 2mm; }
+  .meta { position: absolute; top: 50mm; right: 20mm; width: 60mm; font-size: 9pt; color: #6e6e73; text-align: right; }
+  .body { position: absolute; top: 100mm; left: 25mm; right: 20mm; }
+  h1 { font-size: 13pt; margin: 0 0 5mm; letter-spacing: -.01em; }
+  p { margin: 0 0 3.2mm; }
+  .demo { display: flex; gap: 8mm; align-items: center; margin: 5mm 0; padding: 5mm; border-radius: 4mm; background: #f5f5f7; }
+  .demo img.shot { width: 78mm; border-radius: 2mm; box-shadow: 0 .4mm 2mm rgba(0,0,0,.25); display: block; }
+  .qr { text-align: center; font-size: 8.5pt; }
+  .qr svg { width: 34mm; height: 34mm; display: block; margin: 0 auto 2mm; }
+  .qr .url { font-size: 6.5pt; color: #6e6e73; white-space: nowrap; }
+  .privacy { position: absolute; bottom: 12mm; left: 25mm; right: 20mm; font-size: 7.2pt; color: #6e6e73; border-top: .2mm solid #ccc; padding-top: 2mm; }
+</style></head>
+<body><div class="page">
+  <div class="sender-line">{{ s.name }} · {{ s.street }} · {{ s.zip_city }}</div>
+  <div class="recipient">{{ name }}<br>{{ street }}<br>{{ zip_city }}</div>
+  <div class="meta">{{ s.name }}<br>{{ s.email }}<br>{{ s.phone }}<br><br>{{ date }}</div>
+
+  <div class="body">
+    <h1>Ihr neuer Webauftritt: schon fertig gestaltet</h1>
+    <p>Guten Tag,</p>
+    <p>bei meiner Suche nach {{ category }}-Betrieben in {{ city }} ist mir aufgefallen, dass {{ reason }}. Damit Sie sich selbst ein Bild machen können, habe ich auf Basis Ihres öffentlichen Google-Maps-Eintrags einen unverbindlichen Entwurf für <strong>{{ name }}</strong> erstellt:</p>
+
+    <div class="demo">
+      <img class="shot" src="{{ screenshot }}" alt="Entwurf">
+      <div class="qr">{{ qr_svg|safe }}Entwurf ansehen<div class="url">{{ url }}</div></div>
+    </div>
+
+    <p>Eine fertige Website wie diese bekommen Sie bei mir für <strong>{{ s.price }}</strong>. Texte, Fotos und Leistungen passe ich gemeinsam mit Ihnen an. Wenn Sie kein Interesse haben, müssen Sie nichts tun.</p>
+    <p>Rufen Sie mich einfach an oder schreiben Sie mir kurz.</p>
+    <p>Freundliche Grüße<br>{{ s.name }}</p>
+  </div>
+
+  <div class="privacy">
+    Datenschutzhinweis: Ihre Kontaktdaten (Name, Anschrift) stammen aus Ihrem öffentlich einsehbaren Google-Maps-Eintrag und werden ausschließlich für diese einmalige Postsendung verwendet (berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO). Sie können der Verwendung jederzeit widersprechen: {{ s.email }}. Bei Widerspruch erhalten Sie keine weitere Post von mir.
+  </div>
+</div></body></html>

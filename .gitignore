@@ -1,0 +1,7 @@
+.env
+data/places.db
+output/
+__pycache__/
+*.pyc
+.venv/
+sender.json

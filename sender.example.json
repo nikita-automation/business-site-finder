@@ -1,0 +1,9 @@
+{
+  "name": "[Ihr Name]",
+  "street": "[Straße Nr.]",
+  "zip_city": "[PLZ Ort]",
+  "email": "[ihre@email.de]",
+  "phone": "[Telefon]",
+  "price": "300 €",
+  "demo_base_url": "https://demo.example.com"
+}

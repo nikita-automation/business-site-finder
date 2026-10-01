@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ name }} – {{ category }} in {{ city }}</title>
+<style>
+  :root {
+    --accent: {{ t.accent }}; --accent2: {{ t.accent2 }};
+    --bg: #f5f5f7; --card: #ffffff; --ink: #1d1d1f; --muted: #6e6e73; --line: rgba(0,0,0,.08);
+    --hero-from: {{ t.accent }}; --hero-to: {{ t.accent2 }};
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000; --card: #1c1c1e; --ink: #f5f5f7; --muted: #a1a1a6; --line: rgba(255,255,255,.12); }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.5;
+         font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  .ribbon { background: #1d1d1f; color: #f5f5f7; text-align: center; font-size: 12px; padding: 7px 16px; }
+  nav { position: sticky; top: 0; z-index: 10; backdrop-filter: saturate(180%) blur(20px);
+        background: color-mix(in srgb, var(--bg) 78%, transparent); border-bottom: 1px solid var(--line); }
+  nav .in { max-width: 1040px; margin: 0 auto; padding: 12px 22px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  nav strong { font-size: 17px; letter-spacing: -.01em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .pill { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-size: 14px; font-weight: 500;
+          padding: 8px 18px; border-radius: 980px; white-space: nowrap; flex-shrink: 0; }
+  .hero { background: linear-gradient(145deg, var(--hero-from), var(--hero-to)); color: #fff; text-align: center; padding: 88px 22px 96px; position: relative; overflow: hidden; }
+  .hero::after { content: ""; position: absolute; inset: auto -20% -60% -20%; height: 80%;
+                 background: radial-gradient(closest-side, rgba(255,255,255,.22), transparent); }
+  .emblem { width: 96px; height: 96px; margin: 0 auto 28px; border-radius: 28px; display: grid; place-items: center; font-size: 52px;
+            background: rgba(255,255,255,.18); backdrop-filter: blur(10px); box-shadow: 0 10px 40px rgba(0,0,0,.18); position: relative; z-index: 1; }
+  .hero h1 { position: relative; z-index: 1; margin: 0 auto 14px; max-width: 760px; font-size: clamp(36px, 7vw, 68px); line-height: 1.05; letter-spacing: -.03em; font-weight: 700; }
+  .hero p { position: relative; z-index: 1; margin: 0 auto 32px; max-width: 560px; font-size: clamp(17px, 2.4vw, 22px); opacity: .92; }
+  .hero .actions { position: relative; z-index: 1; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn { display: inline-block; text-decoration: none; font-size: 17px; font-weight: 500; padding: 13px 26px; border-radius: 980px; }
+  .btn.solid { background: #fff; color: #1d1d1f; }
+  .btn.ghost { color: #fff; border: 1.5px solid rgba(255,255,255,.7); }
+  .badge { position: relative; z-index: 1; display: inline-block; margin-bottom: 18px; font-size: 13px; font-weight: 600; letter-spacing: .04em;
+           text-transform: uppercase; background: rgba(255,255,255,.2); padding: 5px 14px; border-radius: 980px; }
+  main { max-width: 1040px; margin: 0 auto; padding: 56px 22px 24px; }
+  h2 { font-size: clamp(28px, 4.5vw, 44px); letter-spacing: -.025em; margin: 0 0 8px; line-height: 1.1; }
+  .lead { color: var(--muted); font-size: 19px; margin: 0 0 32px; }
+  .bento { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); margin-bottom: 72px; }
+  .tile { background: var(--card); border-radius: 28px; padding: 30px 28px 32px; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+  .tile .ic { font-size: 34px; margin-bottom: 18px; }
+  .tile h3 { margin: 0 0 6px; font-size: 22px; letter-spacing: -.015em; }
+  .tile p { margin: 0; color: var(--muted); font-size: 16px; }
+  .split { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); margin-bottom: 72px; }
+  .big { font-size: 84px; line-height: 1; font-weight: 700; letter-spacing: -.04em;
+         background: linear-gradient(145deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .stars { color: var(--accent); letter-spacing: 3px; font-size: 20px; margin: 6px 0 4px; }
+  .hours div { display: flex; justify-content: space-between; gap: 16px; padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 17px; }
+  .hours div:last-child { border-bottom: 0; }
+  .contact-card { background: linear-gradient(145deg, var(--accent), var(--accent2)); color: #fff; border-radius: 28px; padding: 44px 28px; text-align: center; margin-bottom: 48px; }
+  .contact-card h2 { margin-bottom: 10px; }
+  .contact-card p { margin: 0 0 22px; opacity: .92; font-size: 18px; }
+  footer { text-align: center; color: var(--muted); font-size: 12px; padding: 12px 22px 48px; }
+</style>
+</head>
+<body>
+<div class="ribbon">Unverbindlicher Entwurf – diese Seite ist nicht online veröffentlicht.</div>
+<nav><div class="in">
+  <strong>{{ name }}</strong>
+  {% if phone %}<a class="pill" href="tel:{{ phone|replace(' ', '') }}">{{ t.cta }}</a>{% endif %}
+</div></nav>
+
+<header class="hero">
+  {% if t.badge %}<div class="badge">{{ t.badge }}</div>{% endif %}
+  <div class="emblem">{{ t.emoji }}</div>
+  <h1>{{ t.headline }}</h1>
+  <p>{{ name }} · {{ category }} in {{ city }}. {{ t.sub }}</p>
+  <div class="actions">
+    {% if phone %}<a class="btn solid" href="tel:{{ phone|replace(' ', '') }}">{{ t.cta }}</a>{% endif %}
+    <a class="btn ghost" href="#zeiten">Öffnungszeiten</a>
+  </div>
+</header>
+
+<main>
+  <h2>{{ t.services_title }}</h2>
+  <p class="lead">{{ t.services_lead }}</p>
+  <div class="bento">
+    {% for icon, title, text in t.services %}
+    <div class="tile"><div class="ic">{{ icon }}</div><h3>{{ title }}</h3><p>{{ text }}</p></div>
+    {% endfor %}
+  </div>
+
+  <div class="split">
+    {% if rating %}
+    <div class="tile">
+      <h3>Das sagen unsere Kunden</h3>
+      <div class="big">{{ "%.1f"|format(rating) }}</div>
+      <div class="stars">{% for i in range(rating|round|int) %}★{% endfor %}</div>
+      <p>aus {{ reviews_count }} Google-Bewertungen</p>
+    </div>
+    {% endif %}
+    <div class="tile hours" id="zeiten">
+      <h3>Öffnungszeiten</h3>
+      {% for line in hours %}<div><span>{{ line }}</span></div>
+      {% else %}<p>Bitte rufen Sie uns an.</p>
+      {% endfor %}
+    </div>
+  </div>
+
+  <section class="contact-card">
+    <h2>{{ t.contact_title }}</h2>
+    <p>{{ address }}</p>
+    <div class="actions" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      {% if phone %}<a class="btn solid" href="tel:{{ phone|replace(' ', '') }}">{{ phone }}</a>{% endif %}
+      <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query={{ (name ~ ' ' ~ address)|urlencode }}">Route planen</a>
+    </div>
+  </section>
+</main>
+<footer>Entwurf auf Basis öffentlich verfügbarer Angaben (Google Maps). Texte und Leistungen werden gemeinsam mit Ihnen angepasst.</footer>
+</body>
+</html>

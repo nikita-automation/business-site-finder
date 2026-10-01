@@ -1,0 +1,718 @@
+[
+  {
+    "place_id": "sample-001",
+    "name": "Haarwerk (fiktiv)",
+    "address": "Beispielweg 2, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Friseur",
+    "phone": "+49 2361 900001",
+    "website": "http://haarwerk.example",
+    "rating": 3.9,
+    "reviews_count": 75,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-002",
+    "name": "Schnittpunkt (fiktiv)",
+    "address": "Beispielweg 38, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Friseur",
+    "phone": "+49 2361 900002",
+    "website": "https://www.facebook.com/schnittpunkt-fiktiv",
+    "rating": 3.6,
+    "reviews_count": 115,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-003",
+    "name": "Kamm & Schere (fiktiv)",
+    "address": "Musterstraße 36, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Friseur",
+    "phone": "+49 2361 900003",
+    "website": null,
+    "rating": 4.4,
+    "reviews_count": 218,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-004",
+    "name": "Locke (fiktiv)",
+    "address": "Probestraße 38, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Friseur",
+    "phone": "+49 2361 900004",
+    "website": null,
+    "rating": 4.7,
+    "reviews_count": 85,
+    "opening_hours": [
+      "Mo-Sa 09:00-19:00"
+    ]
+  },
+  {
+    "place_id": "sample-005",
+    "name": "Haarlinie (fiktiv)",
+    "address": "Fiktivring 18, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Friseur",
+    "phone": "+49 2361 900005",
+    "website": null,
+    "rating": 4.8,
+    "reviews_count": 176,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-006",
+    "name": "Spitzenschnitt (fiktiv)",
+    "address": "Beispielweg 25, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Friseur",
+    "phone": "+49 2361 900006",
+    "website": null,
+    "rating": 4.7,
+    "reviews_count": 139,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-007",
+    "name": "Fade Corner (fiktiv)",
+    "address": "Probestraße 35, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Barbershop",
+    "phone": "+49 2361 900007",
+    "website": null,
+    "rating": 4.8,
+    "reviews_count": 44,
+    "opening_hours": [
+      "Mo-Fr 08:00-17:00"
+    ]
+  },
+  {
+    "place_id": "sample-008",
+    "name": "Bartwerk (fiktiv)",
+    "address": "Fiktivring 37, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Barbershop",
+    "phone": "+49 2361 900008",
+    "website": null,
+    "rating": 3.7,
+    "reviews_count": 120,
+    "opening_hours": [
+      "Mo-Fr 08:00-17:00"
+    ]
+  },
+  {
+    "place_id": "sample-009",
+    "name": "Klingenschmiede (fiktiv)",
+    "address": "Beispielweg 55, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Barbershop",
+    "phone": "+49 2361 900009",
+    "website": null,
+    "rating": 3.7,
+    "reviews_count": 146,
+    "opening_hours": [
+      "Mo-Sa 09:00-19:00"
+    ]
+  },
+  {
+    "place_id": "sample-010",
+    "name": "Cut Club (fiktiv)",
+    "address": "Fiktivring 11, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Barbershop",
+    "phone": "+49 2361 900010",
+    "website": "https://www.facebook.com/cut-club-fiktiv",
+    "rating": 3.9,
+    "reviews_count": 140,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-011",
+    "name": "Nagelzauber (fiktiv)",
+    "address": "Probeallee 35, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Nagelstudio",
+    "phone": "+49 2361 900011",
+    "website": "http://nagelzauber.example",
+    "rating": 3.8,
+    "reviews_count": 198,
+    "opening_hours": [
+      "Mo-Fr 08:00-17:00"
+    ]
+  },
+  {
+    "place_id": "sample-012",
+    "name": "Glanzfinger (fiktiv)",
+    "address": "Testplatz 44, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Nagelstudio",
+    "phone": "+49 2361 900012",
+    "website": null,
+    "rating": 4.6,
+    "reviews_count": 32,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-013",
+    "name": "Nail Atelier (fiktiv)",
+    "address": "Musterstraße 52, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Nagelstudio",
+    "phone": "+49 2361 900013",
+    "website": null,
+    "rating": 3.9,
+    "reviews_count": 112,
+    "opening_hours": [
+      "Mo-Fr 08:00-17:00"
+    ]
+  },
+  {
+    "place_id": "sample-014",
+    "name": "Lackiert (fiktiv)",
+    "address": "Testplatz 42, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Nagelstudio",
+    "phone": "+49 2361 900014",
+    "website": "https://www.facebook.com/lackiert-fiktiv",
+    "rating": 4.8,
+    "reviews_count": 238,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-015",
+    "name": "Hautnah (fiktiv)",
+    "address": "Demogasse 9, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Kosmetikstudio",
+    "phone": "+49 2361 900015",
+    "website": null,
+    "rating": 4.3,
+    "reviews_count": 138,
+    "opening_hours": [
+      "Mo-Sa 09:00-19:00"
+    ]
+  },
+  {
+    "place_id": "sample-016",
+    "name": "Schönwerk (fiktiv)",
+    "address": "Beispielmarkt 24, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Kosmetikstudio",
+    "phone": "+49 2361 900016",
+    "website": null,
+    "rating": 4.9,
+    "reviews_count": 256,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-017",
+    "name": "Glow Studio (fiktiv)",
+    "address": "Musterstraße 56, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Kosmetikstudio",
+    "phone": "+49 2361 900017",
+    "website": null,
+    "rating": 4.4,
+    "reviews_count": 220,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-018",
+    "name": "Reinhaut (fiktiv)",
+    "address": "Beispielmarkt 25, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Kosmetikstudio",
+    "phone": "+49 2361 900018",
+    "website": "http://reinhaut.example",
+    "rating": 4.2,
+    "reviews_count": 132,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-019",
+    "name": "Schraubers Eck (fiktiv)",
+    "address": "Beispielweg 44, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Autowerkstatt",
+    "phone": "+49 2361 900019",
+    "website": "https://www.schraubers-eck.example",
+    "rating": 4.6,
+    "reviews_count": 178,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-020",
+    "name": "Motorwerk (fiktiv)",
+    "address": "Demogasse 28, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Autowerkstatt",
+    "phone": "+49 2361 900020",
+    "website": null,
+    "rating": 3.6,
+    "reviews_count": 138,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-021",
+    "name": "Radlager (fiktiv)",
+    "address": "Beispielweg 56, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Autowerkstatt",
+    "phone": "+49 2361 900021",
+    "website": "http://radlager.example",
+    "rating": 4.7,
+    "reviews_count": 105,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-022",
+    "name": "Zündfunke (fiktiv)",
+    "address": "Fiktivring 49, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Autowerkstatt",
+    "phone": "+49 2361 900022",
+    "website": null,
+    "rating": 4.8,
+    "reviews_count": 4,
+    "opening_hours": [
+      "Mo-Fr 08:00-17:00"
+    ]
+  },
+  {
+    "place_id": "sample-023",
+    "name": "Kfz Meisterblick (fiktiv)",
+    "address": "Probestraße 2, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Autowerkstatt",
+    "phone": "+49 2361 900023",
+    "website": null,
+    "rating": 4.1,
+    "reviews_count": 161,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-024",
+    "name": "Stromkreis (fiktiv)",
+    "address": "Musterstraße 16, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Elektriker",
+    "phone": "+49 2361 900024",
+    "website": "https://www.stromkreis.example",
+    "rating": 4.8,
+    "reviews_count": 47,
+    "opening_hours": [
+      "Mo-Sa 09:00-19:00"
+    ]
+  },
+  {
+    "place_id": "sample-025",
+    "name": "Voltwerk (fiktiv)",
+    "address": "Beispielweg 49, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Elektriker",
+    "phone": "+49 2361 900025",
+    "website": "http://voltwerk.example",
+    "rating": 3.8,
+    "reviews_count": 247,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-026",
+    "name": "Leitung Plus (fiktiv)",
+    "address": "Demogasse 34, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Elektriker",
+    "phone": "+49 2361 900026",
+    "website": "https://www.leitung-plus.example",
+    "rating": 4.2,
+    "reviews_count": 112,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-027",
+    "name": "Funkenflug (fiktiv)",
+    "address": "Demogasse 26, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Elektriker",
+    "phone": "+49 2361 900027",
+    "website": "https://www.funkenflug.example",
+    "rating": 4.4,
+    "reviews_count": 228,
+    "opening_hours": [
+      "Mo-Sa 09:00-19:00"
+    ]
+  },
+  {
+    "place_id": "sample-028",
+    "name": "Rohrmeister (fiktiv)",
+    "address": "Beispielweg 16, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Klempner",
+    "phone": "+49 2361 900028",
+    "website": null,
+    "rating": 4.0,
+    "reviews_count": 121,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-029",
+    "name": "Dichtung & Co (fiktiv)",
+    "address": "Musterstraße 5, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Klempner",
+    "phone": "+49 2361 900029",
+    "website": "http://dichtung-co.example",
+    "rating": 3.7,
+    "reviews_count": 38,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-030",
+    "name": "Wasserwerk Klein (fiktiv)",
+    "address": "Fiktivring 5, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Klempner",
+    "phone": "+49 2361 900030",
+    "website": "http://wasserwerk-klein.example",
+    "rating": 4.0,
+    "reviews_count": 252,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-031",
+    "name": "Hahn & Sohn (fiktiv)",
+    "address": "Probeallee 47, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Klempner",
+    "phone": "+49 2361 900031",
+    "website": "https://www.hahn-sohn.example",
+    "rating": 4.3,
+    "reviews_count": 246,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-032",
+    "name": "Pinselstrich (fiktiv)",
+    "address": "Probestraße 52, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Maler",
+    "phone": "+49 2361 900032",
+    "website": "https://www.facebook.com/pinselstrich-fiktiv",
+    "rating": 3.7,
+    "reviews_count": 224,
+    "opening_hours": [
+      "Mo-Fr 08:00-17:00"
+    ]
+  },
+  {
+    "place_id": "sample-033",
+    "name": "Farbwerk (fiktiv)",
+    "address": "Beispielmarkt 27, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Maler",
+    "phone": "+49 2361 900033",
+    "website": "https://www.facebook.com/farbwerk-fiktiv",
+    "rating": 4.5,
+    "reviews_count": 54,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-034",
+    "name": "Wandkunst (fiktiv)",
+    "address": "Beispielmarkt 47, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Maler",
+    "phone": "+49 2361 900034",
+    "website": null,
+    "rating": 4.7,
+    "reviews_count": 131,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-035",
+    "name": "Rollenspiel (fiktiv)",
+    "address": "Testplatz 35, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Maler",
+    "phone": "+49 2361 900035",
+    "website": "https://www.facebook.com/rollenspiel-fiktiv",
+    "rating": 4.1,
+    "reviews_count": 146,
+    "opening_hours": [
+      "Mo-Sa 09:00-19:00"
+    ]
+  },
+  {
+    "place_id": "sample-036",
+    "name": "Tapetenwechsel (fiktiv)",
+    "address": "Testplatz 56, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Maler",
+    "phone": "+49 2361 900036",
+    "website": "https://www.tapetenwechsel.example",
+    "rating": 4.2,
+    "reviews_count": 54,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-037",
+    "name": "Blütenzauber (fiktiv)",
+    "address": "Musterstraße 6, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Blumenladen",
+    "phone": "+49 2361 900037",
+    "website": "https://www.blütenzauber.example",
+    "rating": 4.7,
+    "reviews_count": 89,
+    "opening_hours": [
+      "Mo-Sa 09:00-19:00"
+    ]
+  },
+  {
+    "place_id": "sample-038",
+    "name": "Floristik Stiel (fiktiv)",
+    "address": "Probestraße 31, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Blumenladen",
+    "phone": "+49 2361 900038",
+    "website": null,
+    "rating": 4.1,
+    "reviews_count": 34,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-039",
+    "name": "Grüne Ecke (fiktiv)",
+    "address": "Beispielmarkt 1, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Blumenladen",
+    "phone": "+49 2361 900039",
+    "website": "https://www.grüne-ecke.example",
+    "rating": 3.9,
+    "reviews_count": 236,
+    "opening_hours": [
+      "Mo-Fr 08:00-17:00"
+    ]
+  },
+  {
+    "place_id": "sample-040",
+    "name": "Rosenzeit (fiktiv)",
+    "address": "Beispielmarkt 45, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Blumenladen",
+    "phone": "+49 2361 900040",
+    "website": "https://www.rosenzeit.example",
+    "rating": 4.9,
+    "reviews_count": 253,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-041",
+    "name": "Tulpenfeld (fiktiv)",
+    "address": "Testplatz 19, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Blumenladen",
+    "phone": "+49 2361 900041",
+    "website": null,
+    "rating": 3.7,
+    "reviews_count": 35,
+    "opening_hours": [
+      "Mo-Fr 08:00-17:00"
+    ]
+  },
+  {
+    "place_id": "sample-042",
+    "name": "Bewegungsraum (fiktiv)",
+    "address": "Musterstraße 4, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Physiotherapie",
+    "phone": "+49 2361 900042",
+    "website": "http://bewegungsraum.example",
+    "rating": 4.3,
+    "reviews_count": 84,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-043",
+    "name": "Gelenkig (fiktiv)",
+    "address": "Beispielweg 55, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Physiotherapie",
+    "phone": "+49 2361 900043",
+    "website": null,
+    "rating": 4.4,
+    "reviews_count": 124,
+    "opening_hours": [
+      "Mo-Sa 09:00-19:00"
+    ]
+  },
+  {
+    "place_id": "sample-044",
+    "name": "Physio Mitte (fiktiv)",
+    "address": "Beispielweg 57, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Physiotherapie",
+    "phone": "+49 2361 900044",
+    "website": "http://physio-mitte.example",
+    "rating": 4.4,
+    "reviews_count": 24,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-045",
+    "name": "Rücken frei (fiktiv)",
+    "address": "Beispielmarkt 43, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Physiotherapie",
+    "phone": "+49 2361 900045",
+    "website": "http://rücken-frei.example",
+    "rating": 4.3,
+    "reviews_count": 137,
+    "opening_hours": [
+      "Di-Sa 10:00-18:00"
+    ]
+  },
+  {
+    "place_id": "sample-046",
+    "name": "Sauberkeit Pur (fiktiv)",
+    "address": "Fiktivring 16, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Reinigung",
+    "phone": "+49 2361 900046",
+    "website": null,
+    "rating": 3.8,
+    "reviews_count": 157,
+    "opening_hours": [
+      "Mo-Sa 09:00-19:00"
+    ]
+  },
+  {
+    "place_id": "sample-047",
+    "name": "Fleckenfrei (fiktiv)",
+    "address": "Fiktivring 60, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Reinigung",
+    "phone": "+49 2361 900047",
+    "website": "https://www.fleckenfrei.example",
+    "rating": 3.7,
+    "reviews_count": 238,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-048",
+    "name": "Textilpflege Rein (fiktiv)",
+    "address": "Beispielweg 35, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Reinigung",
+    "phone": "+49 2361 900048",
+    "website": null,
+    "rating": 3.9,
+    "reviews_count": 182,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-049",
+    "name": "Blitzblank (fiktiv)",
+    "address": "Testplatz 24, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Reinigung",
+    "phone": "+49 2361 900049",
+    "website": null,
+    "rating": 4.2,
+    "reviews_count": 158,
+    "opening_hours": [
+      "Mo-Fr 09:00-18:00",
+      "Sa 09:00-13:00"
+    ]
+  },
+  {
+    "place_id": "sample-050",
+    "name": "Staubfrei (fiktiv)",
+    "address": "Demogasse 60, 45657 Recklinghausen",
+    "city": "Recklinghausen",
+    "category": "Reinigung",
+    "phone": "+49 2361 900050",
+    "website": "http://staubfrei.example",
+    "rating": 4.8,
+    "reviews_count": 72,
+    "opening_hours": [
+      "Mo-Fr 08:00-17:00"
+    ]
+  }
+]
