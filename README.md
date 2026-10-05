@@ -1,5 +1,7 @@
 # business-site-finder
 
+[![ci](https://github.com/nikita-automation/business-site-finder/actions/workflows/ci.yml/badge.svg)](https://github.com/nikita-automation/business-site-finder/actions/workflows/ci.yml)
+
 Pipeline that finds local businesses on Google Maps with **no website or an outdated one**, builds a personalised demo site for each, and prepares a print-ready letter with a QR code. Nothing is ever sent: the output is a folder of PDFs and demo pages.
 
 > Portfolio project. The repository contains only synthetic sample data. Real business data is never committed.
@@ -12,8 +14,16 @@ Pipeline that finds local businesses on Google Maps with **no website or an outd
 
 ## Pipeline
 
-```
-query + city → collect → audit sites → score → demo site → letter PDF → report
+```mermaid
+flowchart LR
+    Q([query + city]) --> C[collect<br/>Places API or sample data]
+    C --> DB[(SQLite)]
+    DB --> A[audit<br/>HTTPS · viewport · year · PageSpeed]
+    A --> S[score<br/>no_site · outdated · ok]
+    S --> D[demo site<br/>Jinja2]
+    D --> L[letter PDF<br/>screenshot + QR code]
+    S --> R[report.html]
+    L --> R
 ```
 
 | Stage | Status | What it does |
